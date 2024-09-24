@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: 
+  name: 'Azure Pipelines'
 
 steps:
 - task: AzureResourceManagerTemplateDeployment@3
