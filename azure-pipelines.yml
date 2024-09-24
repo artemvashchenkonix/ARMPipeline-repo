@@ -19,7 +19,7 @@ steps:
     resourceGroupName: 'skillup-9cc93d7e-rg'
     location: 'North Europe'
     templateLocation: 'Linked artifact'
-    csmFile: 'https://raw.githubusercontent.com/artemvashchenkonix/ARMPipeline-repo/refs/heads/main/create_web_app/azuredeploy.json'
+    csmFile: 'https://raw.githubusercontent.com/artemvashchenkonix/ARMPipeline-repo/main/create_web_app/azuredeploy.json'
     overrideParameters: '-projectName test-pipeline'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
