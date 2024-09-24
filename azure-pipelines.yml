@@ -12,14 +12,14 @@ pool:
 steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
-    deploymentScope: 'Resource Group'
+    deploymentScope: 'Resource Group'    
     azureResourceManagerConnection: 'ARMPipeline-conn'
     subscriptionId: '02c671a8-8d74-4af7-b072-882e8643b21e'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'skillup-9cc93d7e-rg'
     location: 'North Europe'
     templateLocation: 'Linked artifact'
-    csmFile: 'https://raw.githubusercontent.com/artemvashchenkonix/ARMPipeline-repo/refs/heads/main/create_web_app/azuredeploy.json'
+    csmFileLink: 'https://raw.githubusercontent.com/artemvashchenkonix/ARMPipeline-repo/refs/heads/main/create_web_app/azuredeploy.json'
     overrideParameters: '-projectName test-pipeline'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
